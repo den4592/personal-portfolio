@@ -10,7 +10,12 @@ const Accordion = () => {
       tags: ["html", "css", "js"],
       text: "",
     },
-    { title: "Publishing - Secondway_Studio", contents: [secondway_studio] },
+    {
+      title: "Publishing - Secondway_Studio",
+      contents: [secondway_studio],
+      tags: ["html", "css", "js"],
+      text: "",
+    },
   ]);
 
   const [selected, setSelected] = useState(null);
@@ -33,10 +38,20 @@ const Accordion = () => {
             }
           >
             {selected === index && (
-              <>
-                <img src={`${it.contents[0]}`} alt="" />
-                <p>{it.tags}</p>
-              </>
+              <div className="inner">
+                <div className="inner__left">
+                  <img src={`${it.contents[0]}`} alt="content_img" />
+                  <span>#첫 인턴십 #인플루언서 #마케팅 서비스 #퍼블리싱</span>
+                </div>
+
+                <ul className="tags">
+                  {it.tags.map((tag, index) => (
+                    <li className="tag" key={index}>
+                      <span>{tag}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
           </div>
         </li>

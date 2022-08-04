@@ -11,6 +11,9 @@ body {
   overflow: hidden;
 }
 
+.d-flex {
+  display: flex;
+}
 // section {
 //   width: 100%;
 //   min-height: 100vh;
@@ -71,56 +74,91 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
+  bottom: 0;
   .growth {
-    // opacity: 0;
-    width: 60%;
-    position: fixed;
-    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
     right: 0;
+    bottom: 0;
     list-style: none;
     &__title {
       font-size: 3rem;
       font-weight: 100;
     }
   }
-  .list {
-    width: 100%;
-    list-style: none;
-    .item {
-      padding: 0.7rem;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
-      &__title {
-        font-size: 1.4rem;
-        &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
-          cursor: pointer;
-        }
-      }
+}
 
-      &__contents {
-        width: 100%;
-        background: #e5feff;
-        max-height: 0;
-        opacity: 0;
+.list {
+  width: 100%;
+  max-width: 1200px;
+  list-style: none;
+  .item {
+    padding: 1rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    &__title {
+      font-size: 1.4rem;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+
+    &__contents {
+      width: 100%;
+      max-height: 0;
+      opacity: 0;
+
+      img {
+        height: 0;
+      }
+      &.active {
+        opacity: 1;
+        max-height: 700px;
+        transition: 1.2s;
         img {
-          height: 0;
-        }
-        &.active {
-          opacity: 1;
-          max-height: 300px;
-          transition: 1.2s;
-          img {
-            border: 3px solid #8d8c8c;
-            border-radius: 4px;
-            width: 60%;
-            height: 100%;
-          }
+          border: 3px solid #8d8c8c;
+          margin: 0 auto;
+          border-radius: 4px;
+          width: 100%;
+          max-width: 800px;
+          height: 100%;
+          max-height: 400px;
+          margin: 1rem 0;
         }
       }
     }
+  }
+}
+
+.inner {
+  &__left {
+    display: flex;
+    flex-direction: column;
+    span {
+    }
+  }
+}
+
+.tags {
+  width: 30%;
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+  .tag {
+    width: 3rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tag + .tag {
+    margin-left: 1rem;
   }
 }
 
