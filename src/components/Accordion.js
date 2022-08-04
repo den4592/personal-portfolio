@@ -7,13 +7,13 @@ const Accordion = () => {
     {
       title: "Publishing - CLNK",
       contents: [clink],
-      tags: ["html", "css", "js"],
+      tags: ["#첫 인턴십", "#인플루언서", "#마케팅 플랫폼", "#퍼블리싱"],
       text: "",
     },
     {
       title: "Publishing - Secondway_Studio",
       contents: [secondway_studio],
-      tags: ["html", "css", "js"],
+      tags: ["#첫 인턴십", "#라이프스타일", "#멀티 채널", "#네트워크"],
       text: "",
     },
   ]);
@@ -41,7 +41,6 @@ const Accordion = () => {
               <div className="inner">
                 <div className="inner__left">
                   <img src={`${it.contents[0]}`} alt="content_img" />
-                  <span>#첫 인턴십 #인플루언서 #마케팅 서비스 #퍼블리싱</span>
                 </div>
 
                 <ul className="tags">
