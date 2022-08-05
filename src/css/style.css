@@ -61,6 +61,13 @@ body {
   top: 0;
   left: 0;
   bottom: 0; }
+  .main .name {
+    opacity: 0;
+    font-size: clamp(2rem, 6vw, 7vw);
+    position: absolute;
+    right: 0; }
+    .main .name span {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
   .main .growth {
     opacity: 0;
     width: 100%;
@@ -79,6 +86,9 @@ body {
   .list .item {
     padding: 1rem;
     border-top: 2px solid black; }
+    .list .item .dev-stack {
+      padding: 0 1rem;
+      color: #8d8c8c; }
     .list .item__title {
       font-size: 1.4rem; }
       .list .item__title:hover {
@@ -111,6 +121,19 @@ body {
 .inner__left {
   display: flex;
   flex-direction: column; }
+
+.inner__text {
+  padding: 1rem 0; }
+
+.inner a {
+  height: 1rem;
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  color: #000; }
+  .inner a:hover {
+    opacity: 0.7;
+    transition: 0.3s; }
 
 .tags {
   display: flex;

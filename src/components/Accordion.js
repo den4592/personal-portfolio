@@ -1,20 +1,25 @@
 import { useState } from "react";
 import clink from "../img/clink.png";
 import secondway_studio from "../img/secondway_studio.png";
+import { MdDoubleArrow } from "react-icons/md";
 
 const Accordion = () => {
   const [item, setItem] = useState([
     {
       title: "Publishing - CLNK",
+      dev_stack: "HTML CSS JS",
       contents: [clink],
       tags: ["#첫 인턴십", "#인플루언서", "#마케팅 플랫폼", "#퍼블리싱"],
-      text: "",
+      text: "학교에서 주최하는 산합협동인턴십으로 (주)버즈비터즈 사에서 '클링크' 웹 사이트 개발을 하였다. ",
+      link: "https://c-lnk.com",
     },
     {
       title: "Publishing - Secondway_Studio",
+      dev_stack: "HTML CSS JS",
       contents: [secondway_studio],
       tags: ["#첫 인턴십", "#라이프스타일", "#멀티 채널", "#네트워크"],
-      text: "",
+      text: "(주)버즈비터즈 사의 두번째 사업인 세컨드 웨이 스튜디오 웹 사이트 개발을 하였다.",
+      link: "https://www.secondway.studio",
     },
   ]);
 
@@ -31,7 +36,10 @@ const Accordion = () => {
     <ul className="list">
       {item.map((it, index) => (
         <li className="item" key={index} onClick={() => toggle(index)}>
-          <p className="item__title">{it.title}</p>
+          <p className="item__title">
+            {it.title}
+            <span className="dev-stack">{it.dev_stack}</span>
+          </p>
           <div
             className={
               selected === index ? "item__contents active" : "item__contents"
@@ -42,7 +50,6 @@ const Accordion = () => {
                 <div className="inner__left">
                   <img src={`${it.contents[0]}`} alt="content_img" />
                 </div>
-
                 <ul className="tags">
                   {it.tags.map((tag, index) => (
                     <li className="tag" key={index}>
@@ -50,6 +57,12 @@ const Accordion = () => {
                     </li>
                   ))}
                 </ul>
+                <p className="inner__text">{it.text}</p>
+
+                <a href={it.link} target="__blank">
+                  see live
+                  <MdDoubleArrow className="btn" />
+                </a>
               </div>
             )}
           </div>

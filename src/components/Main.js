@@ -53,6 +53,14 @@ const Hero = () => {
         "start"
       )
       .to(
+        ".name",
+        {
+          opacity: 1,
+          duration: 3,
+        },
+        "start"
+      )
+      .to(
         ".growth",
         {
           opacity: 1,
@@ -64,10 +72,6 @@ const Hero = () => {
         "start"
       );
   }, []);
-
-  // setTimeout(() => {
-  //   document.querySelector(".intro").remove();
-  // }, 13000);
 
   return (
     <section>
@@ -86,6 +90,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="main">
+        <p className="name">
+          <span>{"<creator>"}</span>ILYA<span>{"</creator>"}</span>
+        </p>
         <div className="growth">
           <h2 className="growth__title">growth progress</h2>
           <Accordion />
