@@ -1,6 +1,7 @@
 import { useState } from "react";
 import clink from "../img/clink.png";
-// import secondway_studio from "../img/secondway_studio.png";
+import world_countries_data from "../img/world_countries_data.png";
+// import wcd from "../img/wcd.png";
 import first_portfolio from "../img/portfolio.png";
 import memorystrike from "../img/memorystrike.png";
 import weddinginvitation from "../img/weddinginvitation.png";
@@ -15,6 +16,14 @@ const Accordion = () => {
       tags: ["#첫 인턴십", "#인플루언서", "#마케팅 플랫폼", "#퍼블리싱"],
       text: "학교에서 주최하는 산합협동인턴십으로 (주)버즈비터즈 사에서 '클링크' 웹 사이트 개발을 하였다. ",
       link: "https://c-lnk.com",
+    },
+    {
+      title: "Toy Project - World Coutries Data",
+      dev_stack: "HTML, CSS, JS",
+      contents: [world_countries_data],
+      tags: ["#토이 프로젝트", "#API", "#ChartJS"],
+      text: "세계 나라 데이터를 차트js를 이용하여 시각화 및 정렬 기능을 구현하였다. ",
+      link: "https://world-countries-data.netlify.app",
     },
     {
       title: "First Portfolio",
@@ -72,7 +81,9 @@ const Accordion = () => {
                 <ul className="tags">
                   {it.tags.map((tag, index) => (
                     <li className="tag" key={index}>
-                      <span>{tag}</span>
+                      <strong>
+                        <span>{tag}</span>
+                      </strong>
                     </li>
                   ))}
                 </ul>
