@@ -73,7 +73,6 @@ const Hero = () => {
           },
           "start"
         );
-      document.querySelector(".intro").remove();
     }, 11000);
   }, []);
 
