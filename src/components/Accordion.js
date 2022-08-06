@@ -34,7 +34,7 @@ const Accordion = () => {
     },
     {
       title: "Web App - Memory Strike",
-      dev_stack: "React, LocalStorage, AWS",
+      dev_stack: "React, AWS",
       contents: [memorystrike],
       tags: ["#웹앱", "#리액트", "랜덤카드", "복습", "셀프 테스팅"],
       text: "공부한 내용을 복습 및 셀프 테스팅을 할 수 있는 웹 앱을 개발하였다.",
