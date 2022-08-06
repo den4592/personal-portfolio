@@ -49,9 +49,6 @@ const Hero = () => {
         {
           opacity: 0,
           duration: 2,
-          onComplete: () => {
-            tl1.kill();
-          },
         },
         "start"
       );
@@ -73,12 +70,10 @@ const Hero = () => {
           {
             opacity: 1,
             duration: 3,
-            // onComplete: function () {
-            //   document.querySelector(".intro").remove();
-            // },
           },
           "start"
         );
+      document.querySelector(".intro").remove();
     }, 11000);
   }, []);
 
