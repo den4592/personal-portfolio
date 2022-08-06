@@ -1,6 +1,6 @@
 import { useState } from "react";
 import clink from "../img/clink.png";
-import secondway_studio from "../img/secondway_studio.png";
+// import secondway_studio from "../img/secondway_studio.png";
 import first_portfolio from "../img/portfolio.png";
 import memorystrike from "../img/memorystrike.png";
 import weddinginvitation from "../img/weddinginvitation.png";
@@ -16,14 +16,14 @@ const Accordion = () => {
       text: "학교에서 주최하는 산합협동인턴십으로 (주)버즈비터즈 사에서 '클링크' 웹 사이트 개발을 하였다. ",
       link: "https://c-lnk.com",
     },
-    {
-      title: "Publishing - Secondway_Studio",
-      dev_stack: "HTML, CSS, JS",
-      contents: [secondway_studio],
-      tags: ["#첫 인턴십", "#라이프스타일", "#멀티 채널", "#네트워크"],
-      text: "(주)버즈비터즈 사의 두번째 사업인 '세컨드 웨이 스튜디오' 웹 사이트 개발을 하였다.",
-      link: "https://www.secondway.studio",
-    },
+    // {
+    //   title: "Publishing - Secondway_Studio",
+    //   dev_stack: "HTML, CSS, JS",
+    //   contents: [secondway_studio],
+    //   tags: ["#첫 인턴십", "#라이프스타일", "#멀티 채널", "#네트워크"],
+    //   text: "(주)버즈비터즈 사의 두번째 사업인 '세컨드 웨이 스튜디오' 웹 사이트 개발을 하였다.",
+    //   link: "https://www.secondway.studio",
+    // },
     {
       title: "First Portfolio",
       dev_stack: "React, Styled-Components",
