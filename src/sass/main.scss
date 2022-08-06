@@ -67,7 +67,7 @@ body {
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ body {
   .growth {
     opacity: 0;
     width: 100%;
-
+    height: auto;
     position: absolute;
     right: 0;
     bottom: 0;
