@@ -114,8 +114,7 @@ body {
           max-height: 300px;
           margin: 1rem 0; }
   .list .item + .item {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black; }
+    border-top: 2px solid black; }
 
 .inner__left {
   display: flex;

@@ -49,32 +49,32 @@ const Hero = () => {
         {
           opacity: 0,
           duration: 2,
+          onComplete: () => {
+            tl1.kill();
+          },
+        },
+        "start"
+      )
+
+      .to(
+        ".name",
+        {
+          opacity: 1,
+          duration: 3,
+        },
+        "start"
+      )
+      .to(
+        ".growth",
+        {
+          opacity: 1,
+          duration: 3,
+          onComplete: function () {
+            document.querySelector(".intro").remove();
+          },
         },
         "start"
       );
-
-    setTimeout(() => {
-      const tl2 = gsap
-        .timeline()
-        .add("start")
-        .to(
-          ".name",
-          {
-            opacity: 1,
-            duration: 3,
-          },
-          "start"
-        )
-        .to(
-          ".growth",
-          {
-            opacity: 1,
-            duration: 3,
-          },
-          "start"
-        );
-      document.querySelector(".intro").remove();
-    }, 11000);
   }, []);
 
   return (
