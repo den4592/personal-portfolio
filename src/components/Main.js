@@ -73,9 +73,9 @@ const Hero = () => {
           {
             opacity: 1,
             duration: 3,
-            onComplete: function () {
-              document.querySelector(".intro").remove();
-            },
+            // onComplete: function () {
+            //   document.querySelector(".intro").remove();
+            // },
           },
           "start"
         );
