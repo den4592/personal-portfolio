@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 
 const Hero = () => {
   useEffect(() => {
-    const tl = gsap
+    const tl1 = gsap
       .timeline()
       .add("start")
       .fromTo(
@@ -49,28 +49,37 @@ const Hero = () => {
         {
           opacity: 0,
           duration: 2,
-        },
-        "start"
-      )
-      .to(
-        ".name",
-        {
-          opacity: 1,
-          duration: 3,
-        },
-        "start"
-      )
-      .to(
-        ".growth",
-        {
-          opacity: 1,
-          duration: 3,
-          onComplete: function () {
-            document.querySelector(".intro").remove();
+          onComplete: () => {
+            tl1.kill();
           },
         },
         "start"
       );
+
+    setTimeout(() => {
+      const tl2 = gsap
+        .timeline()
+        .add("start")
+        .to(
+          ".name",
+          {
+            opacity: 1,
+            duration: 3,
+          },
+          "start"
+        )
+        .to(
+          ".growth",
+          {
+            opacity: 1,
+            duration: 3,
+            onComplete: function () {
+              document.querySelector(".intro").remove();
+            },
+          },
+          "start"
+        );
+    }, 11000);
   }, []);
 
   return (
