@@ -1,7 +1,6 @@
 import { useState } from "react";
 import clink from "../img/clink.png";
 import world_countries_data from "../img/world_countries_data.png";
-// import wcd from "../img/wcd.png";
 import first_portfolio from "../img/portfolio.png";
 import memorystrike from "../img/memorystrike.png";
 import weddinginvitation from "../img/weddinginvitation.png";
@@ -18,7 +17,7 @@ const Accordion = () => {
       link: "https://c-lnk.com",
     },
     {
-      title: "Toy Project - World Coutries Data",
+      title: "Toy Project - World Coutries",
       dev_stack: "HTML, CSS, JS",
       contents: [world_countries_data],
       tags: ["#토이 프로젝트", "#API", "#ChartJS"],

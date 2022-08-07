@@ -85,7 +85,7 @@ body {
   max-width: 1200px;
   list-style: none; }
   .list .item {
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem;
     border-top: 2px solid black; }
     .list .item .dev-stack {
       padding: 0 1rem;
