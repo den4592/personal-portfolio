@@ -13,7 +13,7 @@ const Accordion = () => {
       dev_stack: "HTML, CSS, JS",
       contents: [clink],
       tags: ["#첫 인턴십", "#인플루언서", "#마케팅 플랫폼", "#퍼블리싱"],
-      text: "학교에서 주최하는 산합협동인턴십으로 (주)버즈비터즈 사에서 '클링크' 웹 사이트 개발을 하였다. ",
+      text: "학교에서 주최하는 산합협동인턴십으로 (주)버즈비터즈 사에서 '클링크' 웹 사이트 개발을 했습니다. ",
       link: "https://c-lnk.com",
     },
     {
@@ -21,7 +21,7 @@ const Accordion = () => {
       dev_stack: "HTML, CSS, JS",
       contents: [world_countries_data],
       tags: ["#토이 프로젝트", "#API", "#ChartJS"],
-      text: "세계 나라 데이터를 차트js를 이용하여 시각화 및 정렬 기능을 구현하였다. ",
+      text: "세계 나라 데이터를 차트js를 이용하여 시각화 및 정렬 기능을 구현하였습니다. ",
       link: "https://world-countries-data.netlify.app",
     },
     {
@@ -29,7 +29,7 @@ const Accordion = () => {
       dev_stack: "React, Styled-Components",
       contents: [first_portfolio],
       tags: ["#첫 포트폴리오", "#리액트", "#styled-components"],
-      text: "리액트와 styled-components를 이용하여 첫 포트폴리오 사이트 개발을 하였다.",
+      text: "리액트와 styled-components를 이용하여 첫 포트폴리오 사이트 개발을 했습니다.",
       link: "https://denill-port.netlify.app",
     },
     {
@@ -37,7 +37,7 @@ const Accordion = () => {
       dev_stack: "React, AWS",
       contents: [memorystrike],
       tags: ["#웹앱", "#리액트", "#랜덤카드", "#복습", "#셀프 테스팅"],
-      text: "공부한 내용을 복습 및 셀프 테스팅을 할 수 있는 웹 앱을 개발하였다.",
+      text: "공부한 내용을 복습 및 셀프 테스팅을 할 수 있는 웹 앱을 개발했습니다.",
       link: "https://www.memorystrike.com",
     },
     {
@@ -45,7 +45,7 @@ const Accordion = () => {
       dev_stack: "MERN Stack, gsap",
       contents: [weddinginvitation],
       tags: ["#모바일 청첩장", "#MERN"],
-      text: "MERN stack을 이용한 모바일 청첩장을 개발하였다.",
+      text: "MERN stack을 이용한 모바일 청첩장을 개발했습니다.",
       link: "https://byeongju-ilsun.netlify.app",
     },
   ]);

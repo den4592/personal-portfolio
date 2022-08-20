@@ -28,21 +28,21 @@ const Hero = () => {
       .fromTo(
         ".title__first",
         { opacity: 0, x: -500 },
-        { opacity: 1, x: 0, duration: 2 }
+        { opacity: 1, x: 0, duration: 1.2 }
       )
       .to(".title__first", {
         rotation: -180,
         transform: "scale(20)",
-        duration: 2,
+        duration: 1.5,
         opacity: 0,
       })
-      .to(".intro", { backgroundColor: "#000", duration: 2 })
+      .to(".intro", { backgroundColor: "#000", duration: 1.5 })
       .fromTo(
         ".intro__left-second",
         { opacity: 0 },
-        { opacity: 1, duration: 2 }
+        { opacity: 1, duration: 1.5 }
       )
-      .to(".intro", { backgroundColor: "#fff", duration: 1.5 })
+      .to(".intro", { backgroundColor: "#fff", duration: 1.7 })
       .add("start")
       .to(
         ".portfolio",
