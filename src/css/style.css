@@ -102,7 +102,8 @@ body {
       opacity: 0; }
       .list .item__contents.active {
         opacity: 1;
-        max-height: 1000px; }
+        max-height: 1000px;
+        transition: 1.2s; }
         .list .item__contents.active img {
           border: 2px solid #8d8c8c;
           margin: 0 auto;
